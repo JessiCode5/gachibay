@@ -8,3 +8,5 @@
 # not_a_user - Admin
 
 drnewhero - Host
+prism2001 - Host
+sandvichman - Host

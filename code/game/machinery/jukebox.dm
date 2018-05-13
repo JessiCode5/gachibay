@@ -1,4 +1,5 @@
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:32
+//5.13.18 -- added six more spaces for tracks because why not
 
 datum/track
 	var/title
@@ -35,6 +36,31 @@ datum/track/New(var/title_name, var/audio)
 		new/datum/track("Song 4", 'sound/jukebox/barsong4.ogg'),
 		new/datum/track("Song 5", 'sound/jukebox/barsong5.ogg'),
 		new/datum/track("Song 6", 'sound/jukebox/barsong6.ogg'),
+		new/datum/track("Song 7", 'sound/jukebox/barsong7.ogg'),
+		new/datum/track("Song 8", 'sound/jukebox/barsong8.ogg'),
+		new/datum/track("Song 9", 'sound/jukebox/barsong9.ogg'),
+		new/datum/track("Song 10", 'sound/jukebox/barsong10.ogg'),
+		new/datum/track("Song 11", 'sound/jukebox/barsong11.ogg'),
+		new/datum/track("Song 12", 'sound/jukebox/barsong12.ogg'),
+		new/datum/track("Song 13", 'sound/jukebox/barsong13.ogg'),
+		new/datum/track("Song 14", 'sound/jukebox/barsong14.ogg'),
+		new/datum/track("Song 15", 'sound/jukebox/barsong15.ogg'),
+		new/datum/track("Song 16", 'sound/jukebox/barsong16.s3m'),
+		new/datum/track("Song 17", 'sound/jukebox/barsong17.s3m'),
+		new/datum/track("Song 18", 'sound/jukebox/barsong18.mod'),
+		new/datum/track("Song 19", 'sound/jukebox/barsong19.xm'),
+		new/datum/track("Song 20", 'sound/jukebox/barsong20.mod'),
+		new/datum/track("Song 21", 'sound/jukebox/barsong21.ogg'),
+		new/datum/track("Song 22", 'sound/jukebox/barsong22.mod'),
+		new/datum/track("Song 23", 'sound/jukebox/barsong23.mod'),
+		new/datum/track("Song 24", 'sound/jukebox/barsong24.it'),
+		new/datum/track("Song 25", 'sound/jukebox/barsong25.ogg'),
+		new/datum/track("Song 26", 'sound/jukebox/barsong26.ogg'),
+		new/datum/track("Song 27", 'sound/jukebox/barsong27.ogg'),
+		new/datum/track("Song 28", 'sound/jukebox/barsong28.ogg'),
+		new/datum/track("Song 29", 'sound/jukebox/barsong29.ogg'),
+		new/datum/track("Song 30", 'sound/jukebox/barsong30.ogg'),
+
 	)
 
 /obj/machinery/media/jukebox/New()
