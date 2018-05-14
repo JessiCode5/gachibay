@@ -16,7 +16,7 @@
 							/obj/item/toy/prize/ripley													= 1,
 							/obj/item/toy/prize/fireripley												= 1,
 							/obj/item/toy/prize/deathripley												= 1,
-							/obj/item/toy/prize/gygax													= 1,
+							/obj/item/weapon/gun/energy/chameleon										= 1,
 							/obj/item/toy/prize/durand													= 1,
 							/obj/item/toy/prize/honk													= 1,
 							/obj/item/toy/prize/marauder												= 1,

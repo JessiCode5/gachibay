@@ -1,5 +1,5 @@
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:32
-//5.13.18 -- added six more spaces for tracks because why not
+//5.13.18 -- added more spaces for tracks because why not
 
 datum/track
 	var/title
@@ -31,35 +31,35 @@ datum/track/New(var/title_name, var/audio)
 	var/datum/track/current_track
 	var/list/datum/track/tracks = list(
 		new/datum/track("Song 1", 'sound/jukebox/barsong1.ogg'),
-		new/datum/track("Song 2", 'sound/jukebox/barsong2.ogg'),
-		new/datum/track("Song 3", 'sound/jukebox/barsong3.ogg'),
-		new/datum/track("Song 4", 'sound/jukebox/barsong4.ogg'),
+		new/datum/track("2814 - Recovery", 'sound/jukebox/barsong2.ogg'),
+		new/datum/track("ZANEEDS - This is the Ketchup", 'sound/jukebox/barsong3.ogg'),
+		new/datum/track("Fleetwood Mac - Gypsy", 'sound/jukebox/barsong4.ogg'),
 		new/datum/track("Song 5", 'sound/jukebox/barsong5.ogg'),
-		new/datum/track("Song 6", 'sound/jukebox/barsong6.ogg'),
-		new/datum/track("Song 7", 'sound/jukebox/barsong7.ogg'),
-		new/datum/track("Song 8", 'sound/jukebox/barsong8.ogg'),
-		new/datum/track("Song 9", 'sound/jukebox/barsong9.ogg'),
-		new/datum/track("Song 10", 'sound/jukebox/barsong10.ogg'),
-		new/datum/track("Song 11", 'sound/jukebox/barsong11.ogg'),
-		new/datum/track("Song 12", 'sound/jukebox/barsong12.ogg'),
-		new/datum/track("Song 13", 'sound/jukebox/barsong13.ogg'),
-		new/datum/track("Song 14", 'sound/jukebox/barsong14.ogg'),
-		new/datum/track("Song 15", 'sound/jukebox/barsong15.ogg'),
-		new/datum/track("Song 16", 'sound/jukebox/barsong16.s3m'),
-		new/datum/track("Song 17", 'sound/jukebox/barsong17.s3m'),
-		new/datum/track("Song 18", 'sound/jukebox/barsong18.mod'),
-		new/datum/track("Song 19", 'sound/jukebox/barsong19.xm'),
-		new/datum/track("Song 20", 'sound/jukebox/barsong20.mod'),
-		new/datum/track("Song 21", 'sound/jukebox/barsong21.ogg'),
-		new/datum/track("Song 22", 'sound/jukebox/barsong22.mod'),
-		new/datum/track("Song 23", 'sound/jukebox/barsong23.mod'),
-		new/datum/track("Song 24", 'sound/jukebox/barsong24.it'),
-		new/datum/track("Song 25", 'sound/jukebox/barsong25.ogg'),
-		new/datum/track("Song 26", 'sound/jukebox/barsong26.ogg'),
-		new/datum/track("Song 27", 'sound/jukebox/barsong27.ogg'),
-		new/datum/track("Song 28", 'sound/jukebox/barsong28.ogg'),
-		new/datum/track("Song 29", 'sound/jukebox/barsong29.ogg'),
-		new/datum/track("Song 30", 'sound/jukebox/barsong30.ogg'),
+		new/datum/track("R.O.D Theme -Just Kidding, Miss Readman Ver.-", 'sound/jukebox/barsong6.ogg'),
+		new/datum/track("Adam Neely - kmart", 'sound/jukebox/barsong7.ogg'),
+		new/datum/track("Jon Hopkins - Lost in Thought", 'sound/jukebox/barsong8.ogg'),
+		new/datum/track("NUMBER 201 - Into The Night", 'sound/jukebox/barsong9.ogg'),
+		new/datum/track("Max Coveri - Running in the 90s", 'sound/jukebox/barsong10.ogg'),
+		new/datum/track("riya - Shoujo no Gensou (ZTS Remix)", 'sound/jukebox/barsong11.ogg'),
+		new/datum/track("Ryo Fukui - Autumn Leaves", 'sound/jukebox/barsong12.ogg'),
+		new/datum/track("Lobby Music", 'sound/jukebox/barsong13.ogg'),
+		new/datum/track("Danganronpa - Closing Argument", 'sound/jukebox/barsong14.ogg'),
+		new/datum/track("Danganronpa - BOX 15", 'sound/jukebox/barsong15.ogg'),
+		new/datum/track("Uplink OST - Mystique Pt. 2", 'sound/jukebox/barsong16.s3m'),
+		new/datum/track("Uplink OST - Serenity", 'sound/jukebox/barsong17.s3m'),
+		new/datum/track("Uplink OST - Symphonic", 'sound/jukebox/barsong18.mod'),
+		new/datum/track("It is a mystery", 'sound/jukebox/barsong19.xm'),
+		new/datum/track("farout05", 'sound/jukebox/barsong20.mod'),
+		new/datum/track("Necrophageon - Cast Adrift", 'sound/jukebox/barsong21.ogg'),
+		new/datum/track("Turtle grains", 'sound/jukebox/barsong22.mod'),
+		new/datum/track("det var en ulv", 'sound/jukebox/barsong23.mod'),
+		new/datum/track("FF6j - Awakening", 'sound/jukebox/barsong24.it'),
+		new/datum/track("river solo", 'sound/jukebox/barsong25.ogg'),
+		new/datum/track("Kitauji Quartet - Tutti!", 'sound/jukebox/barsong26.ogg'),
+		new/datum/track("claire - FLY ME TO THE MOON", 'sound/jukebox/barsong27.ogg'),
+		new/datum/track("TRUE - Dream Solister", 'sound/jukebox/barsong28.ogg'),
+		new/datum/track("Hammock - Winter Light", 'sound/jukebox/barsong29.ogg'),
+		new/datum/track("Com Truise - Isostasy", 'sound/jukebox/barsong30.ogg'),
 
 	)
 
@@ -116,7 +116,7 @@ datum/track/New(var/title_name, var/audio)
 /obj/machinery/media/jukebox/tg_ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null, datum/ui_state/state = tg_default_state)
 	ui = tgui_process.try_update_ui(user, src, ui_key, ui, force_open)
 	if(!ui)
-		ui = new(user, src, ui_key, "jukebox", "RetroBox - Space Style", 340, 440, master_ui, state)
+		ui = new(user, src, ui_key, "jukebox", "The Gachi Musical Machine", 340, 440, master_ui, state)
 		ui.open()
 
 /obj/machinery/media/jukebox/ui_data()
