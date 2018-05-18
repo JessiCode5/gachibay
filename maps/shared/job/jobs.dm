@@ -457,7 +457,7 @@
 
 /datum/job/chaplain
 	title = "Priest"
-	supervisors = "the Arbiters and Verina"
+	supervisors = "the Arbiters and Billy"
 	minimal_player_age = 21
 	economic_modifier = 3
 	ideal_character_age = 30
@@ -488,7 +488,7 @@
 /datum/job/arbiter
 	title = "Arbiter"
 	department = "Civilian"
-	supervisors = "the Supreme Arbiter and Verina"
+	supervisors = "the Supreme Arbiter and Billy"
 	faction = "Station"
 	department_flag = CIV
 	total_positions = 2
@@ -510,7 +510,7 @@
 /datum/job/supreme_arbiter
 	title = "Supreme Arbiter"
 	department = "Civilian"
-	supervisors = "our glorious God, Verina"
+	supervisors = "our glorious God, Billy"
 	faction = "Station"
 	department_flag = CIV
 	total_positions = 1
