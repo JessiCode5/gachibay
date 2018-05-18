@@ -103,7 +103,7 @@
 #define COMPANY_OPPOSED			"Opposed"
 
 //RELIGIONS
-#define LEGAL_RELIGION 			"Deo Machina"
+#define LEGAL_RELIGION 			"The Gym"
 #define ILLEGAL_RELIGION 		"Old Gods"
 #define NARSIE_RELIGION			"Narsie"
 

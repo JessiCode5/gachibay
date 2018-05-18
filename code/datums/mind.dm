@@ -117,7 +117,7 @@
 	if(ambitions)
 		output += "<HR><B>Ambitions:</B> [ambitions]<br>"
 	if(prayer)
-		output += "<HR><B>The Prayer Of Deo Machina:</B> [prayer]<br>"
+		output += "<HR><B>The Prayer Of The Gym:</B> [prayer]<br>"
 	if(religion == ILLEGAL_RELIGION)
 		var/brothers_message = "Your fellow resisters are here too, they are:<br>"
 		for(var/mob/living/carbon/human/H in human_mob_list)

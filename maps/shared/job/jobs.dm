@@ -307,6 +307,23 @@
 		..()
 		H.add_stats(rand(10,15), rand(7,10), rand(9,14))
 
+/datum/job/headengineer
+	title = "Head Upkeeper"
+	supervisors = "the Overseer"
+	minimal_player_age = 18
+	economic_modifier = 3
+	ideal_character_age = 25
+	total_positions = 1
+	spawn_positions = 1
+	alt_titles = null
+	outfit_type = /decl/hierarchy/outfit/job/dreyfus/inge/inge
+	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage, access_tcomsat)
+	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage, access_tcomsat)
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(10,15), rand(7,10), rand(9,14))
+
 /datum/job/mining
 	selection_color = "#7c6a2e"
 	title = "Miner"
