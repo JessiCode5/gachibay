@@ -29,12 +29,14 @@
 
 RetiredAdmin
 
+
 Moderator       +MOD
 TrialModerator  +MOD
 
 Mentor		+MENTOR  
 TrialAdmin      +@ +ADMIN +STEALTH +SPAWN +REJUV +VAREDIT +BAN +SERVER
 GameAdmin       +@ +DEBUG +FUN +POSSESS +BUILDMODE +SOUND +PERMISSIONS
+Jabroni		+@
 SeniorAdmin     +@
 
 HeadDeveloper   +EVERYTHING
