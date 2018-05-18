@@ -115,7 +115,7 @@
 			//		dat += {"• <A href='?src=\ref[usr];interaction=lick'>Ëèçíóòü â ùåêó.</A><BR>"}
 			if (isnude_p && (!P.mutilated_genitals))
 				if (haspenis_p)
-					dat += {"<A href='?src=\ref[usr];interaction=blowjob'><font color=purple>Give head.</font></A><BR>"}
+					dat += {"<A href='?src=\ref[usr];interaction=blowjob'><font color=purple>Suck dick.</font></A><BR>"}
 				if (hasvagina_p)
 					dat += {"<A href='?src=\ref[usr];interaction=vaglick'><font color=purple>Lick pussy.</font></A><BR>"}
 				//if (hasanus_p)
@@ -192,9 +192,9 @@
 				message = "cums on the floor!"
 
 		else
-			message = pick("cums!", "orgams!")
+			message = pick("cums!", "orgasms!", "nuts!")
 
-		playsound(loc, "honk/sound/interactions/final_m[rand(1, 5)].ogg", 70, 1, 0)
+		playsound(loc, "honk/sound/interactions/final_m[rand(1, 7)].ogg", 70, 1, 0)
 
 		H.visible_message("<B>[H] [message]</B>")
 		if (istype(P.loc, /obj/structure/closet))
@@ -311,10 +311,10 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 				message = pick(" shoves their dick into [P]'s pussy.")
 				H.lastfucked = P
 				H.lfhole = hole
-			
+
 			if(P.virgin)
 				P.virgin = FALSE
-				H.visible_message("<font color=purple><B>[H] pop's [P]'s cherry.</B></font>")
+				H.visible_message("<font color=purple><B>[H] pops [P]'s cherry.</B></font>")
 
 			if (prob(5) && P.stat != DEAD)
 				H.visible_message("<font color=purple><B>[H] [message]</B></font>")
@@ -337,7 +337,7 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 				else
 					P.moan()
 			H.do_fucking_animation(P)
-			playsound(loc, "honk/sound/interactions/bang[rand(1, 3)].ogg", 70, 1, -1)
+			playsound(loc, "honk/sound/interactions/bang[rand(1, 9)].ogg", 70, 1, -1)
 
 		if("anal")
 
@@ -371,7 +371,7 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 				else
 					P.moan()
 			H.do_fucking_animation(P)
-			playsound(loc, "honk/sound/interactions/bang[rand(1, 3)].ogg", 70, 1, -1)
+			playsound(loc, "honk/sound/interactions/bang[rand(1, 9)].ogg", 70, 1, -1)
 
 		if("oral")
 			message = pick("fucks [P]'s throat.")
@@ -419,7 +419,7 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 				H.visible_message("<font color=purple>[H] [message].</font>")
 			if(H.virgin)
 				H.virgin = FALSE
-				H.visible_message("<font color=purple><B>[P] pop's [H]'s cherry.</B></font>")
+				H.visible_message("<font color=purple><B>[P] pops [H]'s cherry.</B></font>")
 			if (istype(P.loc, /obj/structure/closet))
 				P.visible_message("<font color=purple>[H] [message].</font>")
 				playsound(P.loc.loc, 'sound/effects/clang.ogg', 50, 0, 0)
@@ -437,7 +437,7 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 				else
 					P.moan()
 			H.do_fucking_animation(P)
-			playsound(loc, "honk/sound/interactions/bang[rand(1, 3)].ogg", 70, 1, -1)
+			playsound(loc, "honk/sound/interactions/bang[rand(1, 9)].ogg", 70, 1, -1)
 			if (H.species.name == "Slime People")
 				playsound(loc, "honk/sound/interactions/champ[rand(1, 2)].ogg", 50, 1, -1)
 
