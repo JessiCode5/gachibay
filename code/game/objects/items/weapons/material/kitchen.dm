@@ -81,7 +81,7 @@
 	force_divisor = 0.1 // 6 when wielded with hardness 60 (steel)
 	scoop_food = 0
 	sharp = 1
-	sharpness = 25
+	sharpness = 10
 //	edge = 1
 
 // Identical to the tactical knife but nowhere near as stabby.
@@ -105,6 +105,7 @@
 
 /obj/item/weapon/material/kitchen/utensil/knife/plastic
 	default_material = "plastic"
+	sharpness = 0
 
 /*
  * Rolling Pins
