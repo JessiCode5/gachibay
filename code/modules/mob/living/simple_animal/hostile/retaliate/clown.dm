@@ -37,3 +37,14 @@
 	heat_damage_per_tick = 15	//amount of damage applied if animal's body temperature is higher than maxbodytemp
 	cold_damage_per_tick = 10	//same as heat_damage_per_tick, only if the bodytemperature it's lower than minbodytemp
 	unsuitable_atoms_damage = 10
+
+/mob/living/simple_animal/hostile/retaliate/clown/bigjabroni
+	name = "Big Jabroni"
+	desc = "A big, ugly bastard in some kind of jabroni outfit"
+	attack_sound = 'sound/FUCKYOU.ogg'
+	maxHealth = 300
+	health = 300
+	melee_damage_upper = 100
+	speak = list("You know I don't do anal.", "Fisting is 300 bucks.", "Do you like what you see?")
+	emote_see = list("makes a disgusting noise")
+	color = "purple"

@@ -38,12 +38,15 @@
 	faction = "russian"
 
 //SPACE BEARS! SQUEEEEEEEE~     OW! FUCK! IT BIT MY HAND OFF!!
-/mob/living/simple_animal/hostile/bear/Hudson
-	name = "Hudson"
-	desc = ""
+/mob/living/simple_animal/hostile/bear/bearforce
+	name = "Bear Force One"
+	desc = "You have fucked up now."
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
+	health = 600
+	melee_damage_upper = 5000
+	attacktext = "FUCKED"
 
 /mob/living/simple_animal/hostile/bear/Life()
 	. =..()
