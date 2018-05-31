@@ -1,5 +1,5 @@
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:32
-//5.13.18 -- added more spaces for tracks because why not
+//5.31.18 -- even more jukebox spaces
 
 datum/track
 	var/title
@@ -60,6 +60,13 @@ datum/track/New(var/title_name, var/audio)
 		new/datum/track("TRUE - Dream Solister", 'sound/jukebox/barsong28.ogg'),
 		new/datum/track("Hammock - Winter Light", 'sound/jukebox/barsong29.ogg'),
 		new/datum/track("Com Truise - Isostasy", 'sound/jukebox/barsong30.ogg'),
+		new/datum/track("Gorillaz - Humility", 'sound/jukebox/barsong31.ogg'),
+		new/datum/track("Shinji Orito - Pure Snows", 'sound/jukebox/barsong32.ogg'),
+		new/datum/track("Ayana - Last Regrets (short ver)", 'sound/jukebox/barsong33.ogg'),
+		new/datum/track("QUASAR - I Never Thought I'd See The Day", 'sound/jukebox/barsong34.ogg'),
+		new/datum/track("So Inagawa - Selfless State", 'sound/jukebox/barsong35.ogg'),
+		new/datum/track("Cardmoth - Femme Fatale", 'sound/jukebox/barsong36.ogg'),
+		new/datum/track("Accord on Codes - Conscious Gene", 'sound/jukebox/barsong37.ogg'),
 
 	)
 
