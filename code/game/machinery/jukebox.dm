@@ -28,20 +28,15 @@ datum/track/New(var/title_name, var/audio)
 	var/sound_id
 	var/datum/sound_token/sound_token
 
-	var/datum/track/current_track
+	var/datum/track/current_track // there are gaps in file names cuz i just deleted those tracks which was the quickest option
 	var/list/datum/track/tracks = list(
 		new/datum/track("Song 1", 'sound/jukebox/barsong1.ogg'),
-		new/datum/track("2814 - Recovery", 'sound/jukebox/barsong2.ogg'),
-		new/datum/track("ZANEEDS - This is the Ketchup", 'sound/jukebox/barsong3.ogg'),
-		new/datum/track("Fleetwood Mac - Gypsy", 'sound/jukebox/barsong4.ogg'),
-		new/datum/track("Song 5", 'sound/jukebox/barsong5.ogg'),
-		new/datum/track("R.O.D Theme -Just Kidding, Miss Readman Ver.-", 'sound/jukebox/barsong6.ogg'),
-		new/datum/track("Adam Neely - kmart", 'sound/jukebox/barsong7.ogg'),
-		new/datum/track("Jon Hopkins - Lost in Thought", 'sound/jukebox/barsong8.ogg'),
-		new/datum/track("NUMBER 201 - Into The Night", 'sound/jukebox/barsong9.ogg'),
-		new/datum/track("Max Coveri - Running in the 90s", 'sound/jukebox/barsong10.ogg'),
-		new/datum/track("riya - Shoujo no Gensou (ZTS Remix)", 'sound/jukebox/barsong11.ogg'),
-		new/datum/track("Ryo Fukui - Autumn Leaves", 'sound/jukebox/barsong12.ogg'),
+		new/datum/track("Song 5", 'sound/jukebox/barsong5.xm'),
+		new/datum/track("lonely singing fish", 'sound/jukebox/barsong7.mod'),
+		new/datum/track("Song 8", 'sound/jukebox/barsong8.mod'),
+		new/datum/track("RLD Installer #6", 'sound/jukebox/barsong9.xm'),
+		new/datum/track("Zool2", 'sound/jukebox/barsong10.mod'),
+		new/datum/track("Grab My Dick", 'sound/jukebox/barsong12.xm'),
 		new/datum/track("Lobby Music", 'sound/jukebox/barsong13.ogg'),
 		new/datum/track("Danganronpa - Closing Argument", 'sound/jukebox/barsong14.ogg'),
 		new/datum/track("Danganronpa - BOX 15", 'sound/jukebox/barsong15.ogg'),
@@ -50,23 +45,15 @@ datum/track/New(var/title_name, var/audio)
 		new/datum/track("Uplink OST - Symphonic", 'sound/jukebox/barsong18.mod'),
 		new/datum/track("It is a mystery", 'sound/jukebox/barsong19.xm'),
 		new/datum/track("farout05", 'sound/jukebox/barsong20.mod'),
-		new/datum/track("Necrophageon - Cast Adrift", 'sound/jukebox/barsong21.ogg'),
+		//new/datum/track("Necrophageon - Cast Adrift", 'sound/jukebox/barsong21.ogg'),
 		new/datum/track("Turtle grains", 'sound/jukebox/barsong22.mod'),
 		new/datum/track("det var en ulv", 'sound/jukebox/barsong23.mod'),
 		new/datum/track("FF6j - Awakening", 'sound/jukebox/barsong24.it'),
 		new/datum/track("river solo", 'sound/jukebox/barsong25.ogg'),
-		new/datum/track("Kitauji Quartet - Tutti!", 'sound/jukebox/barsong26.ogg'),
-		new/datum/track("claire - FLY ME TO THE MOON", 'sound/jukebox/barsong27.ogg'),
-		new/datum/track("TRUE - Dream Solister", 'sound/jukebox/barsong28.ogg'),
-		new/datum/track("Hammock - Winter Light", 'sound/jukebox/barsong29.ogg'),
-		new/datum/track("Com Truise - Isostasy", 'sound/jukebox/barsong30.ogg'),
-		new/datum/track("Gorillaz - Humility", 'sound/jukebox/barsong31.ogg'),
-		new/datum/track("Shinji Orito - Pure Snows", 'sound/jukebox/barsong32.ogg'),
-		new/datum/track("Ayana - Last Regrets (short ver)", 'sound/jukebox/barsong33.ogg'),
-		new/datum/track("QUASAR - I Never Thought I'd See The Day", 'sound/jukebox/barsong34.ogg'),
-		new/datum/track("So Inagawa - Selfless State", 'sound/jukebox/barsong35.ogg'),
-		new/datum/track("Cardmoth - Femme Fatale", 'sound/jukebox/barsong36.ogg'),
-		new/datum/track("Accord on Codes - Conscious Gene", 'sound/jukebox/barsong37.ogg'),
+		new/datum/track("Song 26", 'sound/jukebox/barsong26.xm'),
+		new/datum/track("DB_CHP16", 'sound/jukebox/barsong28.xm'),
+		new/datum/track("space_debris", 'sound/jukebox/barsong29.mod'),
+		new/datum/track("ELYSIUM", 'sound/jukebox/barsong30.MOD'),
 
 	)
 

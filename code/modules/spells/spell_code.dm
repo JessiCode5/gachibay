@@ -16,8 +16,8 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 	*/
 	var/charge_type = Sp_RECHARGE //can be recharge or charges, see charge_max and charge_counter descriptions; can also be based on the holder's vars now, use "holder_var" for that
 
-	var/charge_max = 100 //recharge time in deciseconds if charge_type = Sp_RECHARGE or starting charges if charge_type = Sp_CHARGES
-	var/charge_counter = 0 //can only cast spells if it equals recharge, ++ each decisecond if charge_type = Sp_RECHARGE or -- each cast if charge_type = Sp_CHARGES
+	var/charge_max = 300 //recharge time in deciseconds if charge_type = Sp_RECHARGE or starting charges if charge_type = Sp_CHARGES
+	var/charge_counter = 300 //can only cast spells if it equals recharge, ++ each decisecond if charge_type = Sp_RECHARGE or -- each cast if charge_type = Sp_CHARGES
 	var/still_recharging_msg = "<span class='notice'>The spell is still recharging.</span>"
 
 	var/silenced = 0 //not a binary - the length of time we can't cast this for
@@ -39,7 +39,7 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 	var/list/level_max = list(Sp_TOTAL = 4, Sp_SPEED = 4, Sp_POWER = 0) //maximum possible levels in each category. Total does cover both.
 	var/cooldown_reduc = 0		//If set, defines how much charge_max drops by every speed upgrade
 	var/delay_reduc = 0
-	var/cooldown_min = 0 //minimum possible cooldown for a charging spell
+	var/cooldown_min = 1 //minimum possible cooldown for a charging spell
 
 	var/overlay = 0
 	var/overlay_icon = 'icons/obj/wizard.dmi'
