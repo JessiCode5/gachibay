@@ -9,7 +9,7 @@ ADDRESS localhost
 PORT 3306
 
 # Database the population, death, karma, etc. tables may be found in
-DATABASE interbay
+DATABASE gachi
 
 # Username/Login used to access the database
 LOGIN bay
