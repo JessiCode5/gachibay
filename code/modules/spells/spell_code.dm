@@ -100,6 +100,7 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 	return
 
 /spell/proc/perform(mob/user = usr, skipcharge = 0) //if recharge is started is important for the trigger spells
+	skipcharge = 0
 	if(!holder)
 		holder = user //just in case
 	if(!cast_check(skipcharge, user))
@@ -270,7 +271,7 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 
 /spell/proc/take_charge(mob/user = user, var/skipcharge)
 	if(!skipcharge)
-		connected_god.take_charge(user, max(1,charge_max/10))
+		//connected_god.take_charge(user, max(1,charge_max/10))
 		switch(charge_type)
 			if(Sp_RECHARGE)
 				charge_counter = 0 //doesn't start recharging until the targets selecting ends
