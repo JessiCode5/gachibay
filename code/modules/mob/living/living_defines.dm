@@ -5,6 +5,7 @@
 	//Health and life related vars
 	var/maxHealth = 100 //Maximum health that should be possible.
 	var/health = 100 	//A mob's health
+	var/shunned_mod = 1 // DARKHOLME'S DUNGEON: The SHUNNENING!!!
 
 	var/hud_updateflag = 0
 

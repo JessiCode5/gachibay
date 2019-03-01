@@ -430,6 +430,10 @@
 
 	if(print_flavor_text()) msg += "[print_flavor_text()]\n"
 
+	// DARKHOLM'S DUNGEON ADDITION: THE MARK OF THE SHUNNED!
+	if(shunned_mod > 1)
+		msg += "<span class='danger'>[T.He] [T.is] SHUNNED BY BILLY!.</span>\n<span class='warning'>You are free to beat, maim, fuck or kill this thing on sight... without consequence!</span>\n"
+
 	msg += "*---------*</span><br>"
 	msg += applying_pressure
 

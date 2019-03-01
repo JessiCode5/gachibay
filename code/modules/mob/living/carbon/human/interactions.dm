@@ -340,7 +340,11 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 			playsound(loc, "honk/sound/interactions/bang[rand(1, 9)].ogg", 70, 1, -1)
 
 		if("anal")
+			log_admin("WHAT THE FUUUUCK")
+			message_admins("aAAAAAAAA", 1)
 			P.apply_damage(3, BRUTE, BP_GROIN)
+			log_admin("WHAT THE FUUUUCK2")
+			message_admins("aAAAAAAAA2", 1)
 			//apply_damage(3, BRUTE, BP_GROIN) -- applies damage to the fucker
 			message = pick("fucks [P]'s ass.")
 			if (prob(35))

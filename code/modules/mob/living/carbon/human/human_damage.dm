@@ -349,6 +349,11 @@ This function restores all organs.
 
 /mob/living/carbon/human/apply_damage(var/damage = 0, var/damagetype = BRUTE, var/def_zone = null, var/blocked = 0, var/damage_flags = 0, var/obj/used_weapon = null)
 
+	// DARKHOLME'S DUNGEON ADDITION: shunning - i sure do hope this works
+	message_admins("HUMAN apply_damage was called...", 1)
+	message_admins("fuck you [shunned_mod]", 1)
+	message_admins("fuck your ass [src.shunned_mod]", 1)
+	damage *= shunned_mod
 	var/obj/item/organ/external/organ = null
 	if(isorgan(def_zone))
 		organ = def_zone

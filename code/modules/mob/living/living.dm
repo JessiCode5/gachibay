@@ -4,6 +4,9 @@
 		add_to_dead_mob_list()
 	else
 		add_to_living_mob_list()
+		//if (src.key)
+			//log_admin("[src.key] is testing....")
+			//message_admins("[src.key] is testing!!!!", 1)
 
 //mob verbs are faster than object verbs. See mob/verb/examine.
 /mob/living/verb/pulled(atom/movable/AM as mob|obj in oview(1))
@@ -179,7 +182,7 @@ default behaviour is:
 		src.adjustBrainLoss(src.health + src.maxHealth * 2) // Deal 2x health in BrainLoss damage, as before but variable.
 		updatehealth()
 		to_chat(src, "<span class='notice'>You have given up life and succumbed to death.</span>")
-	else 
+	else
 		to_chat(src, "<span class='notice'>You are too alive to die.</span>")
 
 

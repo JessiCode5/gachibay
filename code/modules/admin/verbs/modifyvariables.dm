@@ -580,6 +580,15 @@
 
 	world.log << "### VarEdit by [src]: [O.type] [variable]=[rhtml_encode("[new_value]")]"
 	log_and_message_admins("modified [original_name]'s [variable] from '[old_value]' to '[new_value]'")
+	// DARKHOLM'S DUNGEON ADDITION - shun fun (this time applying if CKEY of a mob is manually changed
+	if(variable == "ckey")
+		//message_admins("ckey change detected????????????", 1)
+		if (ckey(new_value) in shunned_list) // DARKHOLME'S DUNGEON ADDITIONS: GOD I HOPE THIS WORKS (SHUNNED)
+			log_admin("[new_value] is FUCKING SHUNNED!")
+			message_admins("[new_value] is FUCKING SHUNNED HOLY ASS!!!!", 1)
+			O.set_variable_value("shunned_mod", 10)
+			//modify_variables(var/atom/O, var/param_var_name = shunned_mod, var/autodetect_class = 10)
+			//modify_variables(O,"shunned_mod",10)
 
 /client
 	var/static/vv_set_handlers

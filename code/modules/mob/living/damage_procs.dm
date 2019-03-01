@@ -8,32 +8,42 @@
 	Returns
 	standard 0 if fail
 */
+// DARKHOLM'S DUNGEON ADDITION - THE SHUNNED MOD
+// basically I added the multiplier on all those adjust calls below
 /mob/living/proc/apply_damage(var/damage = 0,var/damagetype = BRUTE, var/def_zone = null, var/blocked = 0, var/damage_flags = 0, var/used_weapon = null)
+	message_admins("one last test...", 1)
 	if(!damage || (blocked >= 100))	return 0
+	log_admin("apply_damage was called...!")
+	message_admins("apply_damage was called...", 1)
+	message_admins("fuck you [shunned_mod]", 1)
+	message_admins("fuck your ass [src.shunned_mod]", 1)
 	switch(damagetype)
 		if(BRUTE)
-			adjustBruteLoss(damage * blocked_mult(blocked))
+			adjustBruteLoss(damage * blocked_mult(blocked) * src.shunned_mod)
+			log_admin("[shunned_mod] is the shunned modifier... HOLY SHIT!!!!")
+			message_admins("[shunned_mod] is the shunned modifier... HOLY SHIT!!!!", 1)
 		if(BURN)
 			if(COLD_RESISTANCE in mutations)	damage = 0
-			adjustFireLoss(damage * blocked_mult(blocked))
+			adjustFireLoss(damage * blocked_mult(blocked) * src.shunned_mod)
 		if(TOX)
-			adjustToxLoss(damage * blocked_mult(blocked))
+			adjustToxLoss(damage * blocked_mult(blocked) * src.shunned_mod)
 		if(OXY)
-			adjustOxyLoss(damage * blocked_mult(blocked))
+			adjustOxyLoss(damage * blocked_mult(blocked) * src.shunned_mod)
 		if(CLONE)
-			adjustCloneLoss(damage * blocked_mult(blocked))
+			adjustCloneLoss(damage * blocked_mult(blocked) * src.shunned_mod)
 		if(PAIN)
-			adjustHalLoss(damage * blocked_mult(blocked))
+			adjustHalLoss(damage * blocked_mult(blocked) * src.shunned_mod)
 		if(ELECTROCUTE)
-			electrocute_act(damage, used_weapon, 1.0, def_zone)
+			electrocute_act(damage * src.shunned_mod, used_weapon, 1.0, def_zone)
 		if(STAMINA)
-			adjustStaminaLoss(damage/(blocked+1))
+			adjustStaminaLoss(damage * src.shunned_mod/(blocked+1))
 	flash_weak_pain()
 	updatehealth()
 	return 1
 
 
 /mob/living/proc/apply_damages(var/brute = 0, var/burn = 0, var/tox = 0, var/oxy = 0, var/clone = 0, var/halloss = 0, var/stamina = 0, var/def_zone = null, var/blocked = 0, var/damage_flags = 0)
+	message_admins("two last test...", 1)
 	if(blocked >= 100)	return 0
 	if(brute)	apply_damage(brute, BRUTE, def_zone, blocked)
 	if(burn)	apply_damage(burn, BURN, def_zone, blocked)

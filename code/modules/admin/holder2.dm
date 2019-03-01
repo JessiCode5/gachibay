@@ -3,6 +3,7 @@
 #define STEALTH_AUTO 2
 
 var/list/admin_datums = list()
+var/list/shunned_datums = list()
 
 /datum/admins
 	var/rank         = "Temporary Admin"
@@ -148,3 +149,42 @@ NOTE: It checks usr by default. Supply the "user" argument if you wish to check 
 #undef STEALTH_OFF
 #undef STEALTH_MANUAL
 #undef STEALTH_AUTO
+
+
+// DARKHOLM'S DUNGEON ADDITION: attempt to implement the SHUNNED list
+/datum/shunned
+	var/client/owner = null
+
+	var/weakref/marked_datum_weak
+
+/datum/shunned/proc/marked_datum()
+	if(marked_datum_weak)
+		return marked_datum_weak.resolve()
+
+/datum/shunned/New(ckey)
+	if(!ckey)
+		error("Shunned datum created without a ckey argument. Datum has been deleted")
+		qdel(src)
+		return
+	shunned_datums[ckey] = src
+
+/datum/shunned/proc/associate(client/C)
+	if(istype(C))
+		owner = C
+		owner.holder = src
+		//owner.add_admin_verbs()	//TODO
+		//shunned |= C
+
+/datum/shunned/proc/disassociate()
+	if(owner)
+		//shunned -= owner
+		//owner.remove_admin_verbs()
+		//owner.deadmin_holder = owner.holder
+		owner.holder = null
+
+/datum/shunned/proc/reassociate()
+	if(owner)
+		//shunned += owner
+		owner.holder = src
+		//owner.deadmin_holder = null
+		//owner.add_admin_verbs()
