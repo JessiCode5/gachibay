@@ -172,19 +172,11 @@ NOTE: It checks usr by default. Supply the "user" argument if you wish to check 
 	if(istype(C))
 		owner = C
 		owner.holder = src
-		//owner.add_admin_verbs()	//TODO
-		//shunned |= C
 
 /datum/shunned/proc/disassociate()
 	if(owner)
-		//shunned -= owner
-		//owner.remove_admin_verbs()
-		//owner.deadmin_holder = owner.holder
 		owner.holder = null
 
 /datum/shunned/proc/reassociate()
 	if(owner)
-		//shunned += owner
 		owner.holder = src
-		//owner.deadmin_holder = null
-		//owner.add_admin_verbs()

@@ -496,16 +496,6 @@
 	new_character.regenerate_icons()
 
 	new_character.key = key		//Manually transfer the key to log them in
-	/*log_admin("[new_character.key] is CREATING A CHARACTER NOW")
-	message_admins("[new_character.key] is CREATING A MAN NOW OOOOH", 1)
-	var/i
-	for(i=1,i<=shunned_list.len,i++)
-		var/z = shunned_list[i]
-		log_admin("[z] is in the list... but is it [ckey(new_character.key)]!")
-		message_admins("[z] is in the list... but is it [ckey(new_character.key)]", 1)
-		if (new_character.key == ckey(z))
-			log_admin("[new_character.key] is [z] SHIIIIIT")
-			message_admins("[new_character.key] is [z] FUUUUCK", 1)*/
 	if (ckey(new_character.key) in shunned_list) // DARKHOLME'S DUNGEON ADDITIONS: GOD I HOPE THIS WORKS (SHUNNED)
 		log_admin("[new_character.key] is FUCKING SHUNNED!")
 		message_admins("[new_character.key] is FUCKING SHUNNED HOLY ASS!!!!", 1)

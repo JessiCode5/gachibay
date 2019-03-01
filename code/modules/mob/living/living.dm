@@ -4,9 +4,6 @@
 		add_to_dead_mob_list()
 	else
 		add_to_living_mob_list()
-		//if (src.key)
-			//log_admin("[src.key] is testing....")
-			//message_admins("[src.key] is testing!!!!", 1)
 
 //mob verbs are faster than object verbs. See mob/verb/examine.
 /mob/living/verb/pulled(atom/movable/AM as mob|obj in oview(1))
