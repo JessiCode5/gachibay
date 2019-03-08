@@ -7,7 +7,7 @@
 	icon_state = "large"
 	randpixel = 8
 	sharp = 1
-	sharpness = 5
+	sharpness = 2
 	force = 15
 	//edge = 1
 	w_class = ITEM_SIZE_SMALL
