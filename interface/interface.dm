@@ -13,20 +13,20 @@
 
 /client/verb/forum()
 	set name = "forum"
-	set desc = "Visit the forum."
+	set desc = "Join the Discord."
 	set hidden = 1
 	if( config.forumurl )
-		if(alert("This will open the forum in your browser. Are you sure?",,"Yes","No")=="No")
+		if(alert("This will open the Discord link in your browser. Are you sure?",,"Yes","No")=="No")
 			return
 		src << link(config.forumurl)
 	else
-		to_chat(src, "<span class='warning'>The forum URL is not set in the server configuration.</span>")
+		to_chat(src, "<span class='warning'>The discord URL is not set in the server configuration.</span>")
 	return
 
 #define RULES_FILE "config/rules.html"
 /client/verb/rules()
 	set name = "Rules"
-	set desc = "Show Server Rules."
+	set desc = "The laws of this gym."
 	set hidden = 1
 	src << browse(file(RULES_FILE), "window=rules;size=480x320")
 #undef RULES_FILE
@@ -34,7 +34,7 @@
 #define LORE_FILE "config/lore.html"
 /client/verb/lore_splash()
 	set name = "Lore"
-	set desc = "Links to the beginner Lore wiki."
+	set desc = "A helpful handbook on the Gachi lore."
 	set hidden = 1
 	show_browser(src, file(LORE_FILE), "window=lore;size=480x320")
 #undef LORE_FILE

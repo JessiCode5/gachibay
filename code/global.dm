@@ -29,13 +29,13 @@ var/list/hit_appends = list("-OOF", "-ACK", "-UGH", "-HRNK", "-HURGH", "-GLORF")
 
 var/diary               = null
 var/href_logfile        = null
-var/game_version        = "InterBay"
+var/game_version        = "Gachibay"
 var/changelog_hash      = ""
-var/game_year           = (text2num(time2text(world.realtime, "YYYY")) + 544)
+var/game_year           = (text2num(time2text(world.realtime, "YYYY")))
 
 var/round_progressing = 1
-var/master_mode       = "extended" // "extended"
-var/secondary_mode    = "extended"
+var/master_mode       = "secret" // "extended"
+var/secondary_mode    = "secret"
 var/tertiary_mode     = "extended"
 var/secret_force_mode = "secret"   // if this is anything but "secret", the secret rotation will forceably choose this mode.
 
@@ -103,15 +103,15 @@ var/list/awaydestinations = list() // Away missions. A list of landmarks that th
 // MySQL configuration
 var/sqladdress = "localhost"
 var/sqlport    = "3306"
-var/sqldb      = "tgstation"
+var/sqldb      = "gachibay"
 var/sqllogin   = "root"
 var/sqlpass    = ""
 
 // Feedback gathering sql connection
-var/sqlfdbkdb    = "test"
+var/sqlfdbkdb    = "feed"
 var/sqlfdbklogin = "root"
 var/sqlfdbkpass  = ""
-var/sqllogging   = 0 // Should we log deaths, population stats, etc.?
+var/sqllogging   = 1 // Should we log deaths, population stats, etc.?
 
 // Forum MySQL configuration. (for use with forum account/key authentication)
 // These are all default values that will load should the forumdbconfig.txt file fail to read for whatever reason.

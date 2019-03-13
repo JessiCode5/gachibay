@@ -83,6 +83,10 @@ LOG_PDA
 ## sql switching
 SQL_ENABLED
 
+##Dectalk SERVER
+##Uncomment to enable it after setting the URL
+TTS_SERVER http://localhost:7878/
+
 ## disconnect players who did nothing during the set amount of minutes
 # KICK_INACTIVE 30
 
@@ -182,7 +186,7 @@ ANTAG_HUD_RESTRICTED
 # DONT_DEL_NEWMOB
 
 ## set a hosted by name for unix platforms
-HOSTEDBY The Gym
+HOSTEDBY The Gym (https://discord.gg/ssDZxPE)
 
 ## Set to jobban "Guest-" accounts from Captain, HoS, HoP, CE, RD, CMO, Warden, Security, Detective, and AI positions.
 ## Set to 1 to jobban them from those positions, set to 0 to allow them.
@@ -206,8 +210,8 @@ GUEST_BAN
 #SERVERURL server.net:port
 
 ## forum address
-# FORUMURL https://discord.gg/32ccmpC
-FORUMURL https://discord.gg/32ccmpC
+# FORUMURL https://discord.gg/ssDZxPE
+FORUMURL https://discord.gg/ssDZxPE
 
 ## Wiki address
 # WIKIURL https://wiki.baystation12.net/Main_Page
@@ -215,10 +219,10 @@ WIKIURL https://wiki.baystation12.net/Main_Page
 
 ## GitHub address
 # GITHUBURL https://github.com/kachnov/InterBay
-GITHUBURL https://github.com/kachnov/InterBay
+GITHUBURL https://github.com/prism2001/InterBay/jeff
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
-# BANAPPEALS http://example.com
+BANAPPEALS http://gloryholefoundation.com
 
 ## In-game features
 ## spawns a spellbook which gives object-type spells instead of verb-type spells for the wizard
@@ -238,16 +242,16 @@ GITHUBURL https://github.com/kachnov/InterBay
 ALLOW_HOLIDAYS
 
 ##Defines the ticklag for the world.  0.9 is the normal one, 0.5 is smoother.
-TICKLAG 0.45
+TICKLAG 0.42
 
 ##Defines world FPS. Defaults to 20.
-# FPS 20
+# FPS 30
 
 ## Whether the server will talk to other processes through socket_talk
 SOCKET_TALK 0
 
 ## Uncomment this to ban use of ToR
-#TOR_BAN
+TOR_BAN
 
 ## Comment this out to disable automuting
 #AUTOMUTE_ON
@@ -270,7 +274,7 @@ USEALIENWHITELIST
 ## Comment this to unrestrict the number of alien players allowed in the round. The number represents the number of alien players for every human player.
 #ALIEN_PLAYER_RATIO 0.2
 ##Remove the # to let ghosts spin chairs
-#GHOST_INTERACTION
+GHOST_INTERACTION
 
 ## Password used for authorizing ircbot and other external tools.
 #COMMS_PASSWORD
@@ -304,14 +308,14 @@ USEALIENWHITELIST
 ## This helps security and stability on Linux, but you need to compile the library first.
 #USE_LIB_NUDGE
 
-## Uncommen to allow ghosts to write in blood during Cult rounds.
+## Uncomment to allow ghosts to write in blood during Cult rounds.
 ALLOW_CULT_GHOSTWRITER
 
 ## Sets the minimum number of cultists needed for ghosts to write in blood.
-REQ_CULT_GHOSTWRITER 6
+REQ_CULT_GHOSTWRITER 3
 
 ## Sets the number of available character slots
-CHARACTER_SLOTS 10
+CHARACTER_SLOTS 12
 
 ## Expected round length in minutes
 EXPECTED_ROUND_LENGTH 180
@@ -326,8 +330,8 @@ EVENT_DELAY_UPPER 15;45;70
 
 ## The delay until the first time an event of the given severity runs in minutes.
 ## Unset setting use the EVENT_DELAY_LOWER and EVENT_DELAY_UPPER values instead.
-# EVENT_CUSTOM_START_MINOR 10;15
-# EVENT_CUSTOM_START_MODERATE 30;45
+EVENT_CUSTOM_START_MINOR 10;15
+EVENT_CUSTOM_START_MODERATE 30;45
 EVENT_CUSTOM_START_MAJOR 80;100
 
 ## Uncomment to make proccall require R_ADMIN instead of R_DEBUG
@@ -336,13 +340,13 @@ EVENT_CUSTOM_START_MAJOR 80;100
 #DEBUG_PARANOID
 
 ## Uncomment to allow aliens to spawn.
-#ALIENS_ALLOWED
+ALIENS_ALLOWED
 
 ## Uncomment to allow alien xenomorph queens to lay eggs.
 ALIEN_EGGS_ALLOWED
 
 ## Uncomment to allow xenos to spawn.
-#NINJAS_ALLOWED
+NINJAS_ALLOWED
 
 ## Uncomment to disable the restrictive weldervision overlay.
 #DISABLE_WELDER_VISION
@@ -367,10 +371,10 @@ ALIEN_EGGS_ALLOWED
 
 ## Respawn delay in minutes before one may respawn as a crew member.
 #RESPAWN_DELAY 0
-RESPAWN_DELAY 15
+RESPAWN_DELAY 10
 
 ## Strength of ambient star light. Set to 0 or less to turn off. A value of 1 is unlikely to have a noticeable effect in most lighting systems.
-STARLIGHT 0
+STARLIGHT 1
 
 ## Defines which races are allowed to join as ERT, in singular form. If unset, defaults to only human. Casing matters, separate using ;
 ## Example races include: Human, Tajara, Skrell, Unathi
@@ -386,10 +390,10 @@ GENERATE_ASTEROID
 
 
 ## Uncomment to enable organ decay outside of a body or storage item.
-#ORGANS_CAN_DECAY
+ORGANS_CAN_DECAY
 
 ## Uncomment to have the changelog file automatically open when a user connects and hasn't seen the latest changelog
-#AGGRESSIVE_CHANGELOG
+AGGRESSIVE_CHANGELOG
 
 ## Uncomment to override default brain health.
 #DEFAULT_BRAIN_HEALTH 400

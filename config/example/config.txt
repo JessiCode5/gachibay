@@ -80,6 +80,10 @@ LOG_PDA
 ## sql switching
 # SQL_ENABLED
 
+##Dectalk SERVER
+##Uncomment to enable it after setting the URL
+# TTS_SERVER http://localhost/
+
 ## disconnect players who did nothing during the set amount of minutes
 # KICK_INACTIVE 10
 
