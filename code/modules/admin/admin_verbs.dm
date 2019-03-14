@@ -23,6 +23,7 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/toggleguests,	//toggles whether guests can join the current game,
 	/datum/admins/proc/announce,		//priority announce something to all clients.,
 	/client/proc/colorooc,				//allows us to set a custom colour for everythign we say in ooc,
+//	/client/proc/refresh_shunlist,		//DARKHOLME'S DUNGEON - an admin verb to refresh the shunlist, for use after adding a ckey to the shun list file mid-round
 	/client/proc/admin_ghost,			//allows us to ghost/reenter body at will,
 	/client/proc/toggle_view_range,		//changes how far we can see,
 	/datum/admins/proc/view_txt_log,	//shows the server log (diary) for today,
@@ -180,6 +181,7 @@ var/list/admin_verbs_debug = list(
 	/client/proc/cmd_debug_tog_aliens,
 	/client/proc/air_report,
 	/client/proc/reload_admins,
+	/client/proc/reload_shunned,
 	/client/proc/reload_mentors,
 	/client/proc/restart_controller,
 	/client/proc/print_random_map,
@@ -230,6 +232,7 @@ var/list/admin_verbs_hideable = list(
 	/datum/admins/proc/toggleguests,
 	/datum/admins/proc/announce,
 	/client/proc/colorooc,
+//	/client/proc/refresh_shunlist,
 	/client/proc/admin_ghost,
 	/client/proc/toggle_view_range,
 	/datum/admins/proc/view_txt_log,
@@ -277,6 +280,7 @@ var/list/admin_verbs_hideable = list(
 	/client/proc/callproc_target,
 	/client/proc/Debug2,
 	/client/proc/reload_admins,
+	/client/proc/reload_shunned,
 	/client/proc/kill_air,
 	/client/proc/cmd_debug_make_powernets,
 	/client/proc/kill_airgroup,
@@ -519,6 +523,13 @@ var/list/admin_verbs_mentor = list(
 
 	feedback_add_details("admin_verb","OC") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	return
+
+/*/client/proc/refresh_shunlist()
+	set name = "Refresh Shunned List"
+	set category = "Admin"
+	if(!holder)	return
+	load_shunned()
+	return*/
 
 #define MAX_WARNS 3
 #define AUTOBANTIME 10

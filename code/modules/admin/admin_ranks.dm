@@ -165,6 +165,7 @@ var/list/admin_ranks = list()								//list of all ranks with associated rights
 /proc/load_shunned()
 	//clear the datums references
 	shunned_datums.Cut()
+	shunned_list.Cut()
 
 	//load text from file
 	var/list/shunLines = file2list("config/shunned_list.txt")
