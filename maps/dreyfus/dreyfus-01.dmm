@@ -207,7 +207,7 @@
 "dY" = (/obj/machinery/computer/telecomms/monitor,/turf/unsimulated/floor{tag = "icon-reinforced"; icon_state = "reinforced"},/area/space)
 "dZ" = (/obj/machinery/computer/crew,/turf/unsimulated/floor{tag = "icon-reinforced"; icon_state = "reinforced"},/area/space)
 "ea" = (/obj/machinery/integrated_circuit_printer,/turf/unsimulated/floor{tag = "icon-reinforced"; icon_state = "reinforced"},/area/space)
-"eb" = (/turf/simulated/floor/greengrid,/area/dreyfus/fauxpont/iachambre)
+"eb" = (/obj/effect/landmark/start{name = "AI"},/turf/simulated/floor/greengrid,/area/dreyfus/fauxpont/iachambre)
 "ec" = (/obj/machinery/librarycomp,/turf/unsimulated/floor{tag = "icon-reinforced"; icon_state = "reinforced"},/area/space)
 "ed" = (/obj/machinery/librarypubliccomp,/turf/unsimulated/floor{tag = "icon-reinforced"; icon_state = "reinforced"},/area/space)
 "ee" = (/obj/machinery/computer/supply/bullshitsnowflakecashin,/turf/unsimulated/floor{tag = "icon-reinforced"; icon_state = "reinforced"},/area/space)
