@@ -417,6 +417,9 @@ Turf and target are seperate in case you want to teleport some distance from a t
 /proc/get_follow_targets()
 	return follow_repository.get_follow_targets()
 
+/proc/stack_trace(message = "Getting a stack trace.") // Van Darkholme addition -- fuck me
+	CRASH(message)
+
 //Orders mobs by type then by name
 /proc/sortmobs()
 	var/list/moblist = list()

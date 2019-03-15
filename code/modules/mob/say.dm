@@ -9,7 +9,7 @@
 /mob/verb/say_verb(message as text)
 	set name = "Say"
 	set category = "IC"
-	
+
 	if(typing_indicator)
 		qdel(typing_indicator)
 	usr.say(message)
@@ -117,3 +117,20 @@
 			return L
 
 	return null
+
+//proc/dectalk(msg) //van darkholme addition -- probably doesn't work but fuck it let's try it anyways
+//
+//	if(!msg)
+//		return 0
+//	if (world.timeofday > (lastDecTalkUse + (nextDecTalkDelay * 10)))
+//		lastDecTalkUse = world.timeofday
+//		msg = copytext(msg, 1, 2000)
+//		var/res[] = world.Export("[config.tts_server]?tts=[url_encode(msg)]")
+//		//var/res[] = world.Export("http://localhost:1203/?tts=[url_encode(msg)]") //change server
+//		if(!res || !res["CONTENT"])
+//			return 0
+//
+//		var/audio = file2text(res["CONTENT"])
+//		return list("audio" = audio, "message" = msg)
+//	else
+//		return list("cooldown" = 1)
