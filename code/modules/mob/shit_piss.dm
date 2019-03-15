@@ -112,6 +112,12 @@
 		desc = "That's a dried crusty urine stain. Fucking janitors."
 
 
+/obj/effect/decal/cleanable/urine/attackby(obj/item/weapon/W as obj, mob/user as mob)
+	var/obj/item/weapon/reagent_containers/RG = W
+	if(istype(RG) && RG.is_open_container())
+		RG.reagents.add_reagent("urine",10)
+		user.visible_message("[user] sweeps the urine into the [RG.name].\n")
+		Destroy()
 
 /obj/effect/decal/cleanable/cum
 	name = "cum"
@@ -122,6 +128,14 @@
 	blood_DNA = list()
 	anchored = 1
 	random_icon_states = list("cum1", "cum3", "cum4", "cum5", "cum6", "cum7", "cum8", "cum9", "cum10", "cum11", "cum12")
+
+/obj/effect/decal/cleanable/cum/attackby(obj/item/weapon/W as obj, mob/user as mob)
+	var/obj/item/weapon/reagent_containers/RG = W
+	if(istype(RG) && RG.is_open_container())
+		RG.reagents.add_reagent("semen",10)
+		user.visible_message("[user] sweeps the cum into the [RG.name].\n")
+		Destroy()
+
 
 
 /obj/effect/decal/cleanable/cum/New()

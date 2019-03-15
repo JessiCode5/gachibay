@@ -366,6 +366,20 @@
 		if(virgin)
 			msg += "<b>Their cherry is intact!</b>\n"
 
+	//DD Tits
+	if(is_nude() && gender == FEMALE)
+		switch(titsize)
+			if(0)
+				msg += "They have no breasts to see.\n"
+			if(1)
+				msg += tsizeflavortext1[rand(1,tsizeflavortext1.len)]
+			if(2)
+				msg += tsizeflavortext2[rand(1,tsizeflavortext2.len)]
+			if(3)
+				msg += tsizeflavortext3[rand(1,tsizeflavortext3.len)]
+
+
+
 	if(is_nude() && mutilated_genitals)
 		msg += "<span class='warning'><B>THEIR GROIN IS DESTROYED!</B></span>\n"
 

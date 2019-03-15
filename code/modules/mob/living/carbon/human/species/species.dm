@@ -48,6 +48,10 @@
 	var/genitals = 0						  //For erp
 	var/anus = 0							  //Also for erp
 
+	//DD addition. Also for ERP.
+	var/titsize = "Small Tits"
+	var/list/titslist = list("Small Tits", "Medium Tits", "Large Tits")
+
 	var/min_age = 17
 	var/max_age = 70
 

@@ -28,6 +28,9 @@ datum/preferences
 	var/real_name						//our character's name
 	var/be_random_name = 0				//whether we are a random name every round
 	var/age = 30						//age of character
+
+	var/titsize = "1"						//DD Addition, titsize.
+
 	var/spawnpoint = "Default" 			//where this character will spawn (0-2).
 	var/b_type = "A+"					//blood type (not-chooseable)
 	var/backbag = 3						//backpack type
@@ -400,6 +403,8 @@ datum/preferences
 	character.citizenship = citizenship
 	character.personal_faction = faction
 	character.religion = religion
+
+	character.titsize = titsize
 
 	character.skills = skills
 	character.used_skillpoints = used_skillpoints

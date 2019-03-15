@@ -7,6 +7,15 @@
 	var/health = 100 	//A mob's health
 	var/shunned_mod = 1 // DARKHOLME'S DUNGEON: The SHUNNENING!!!
 
+	//DD Addition, https://www.youtube.com/watch?v=2orM_G1dWFM
+
+	var/titsize // 0 = none, 1 = small, 2 = medium, 3 = large.
+	//var/tsizeflavortexts = (var/tsizeflavortext0, var/tsizeflavortext1, var/tsizeflavortext2, var/tsizeflavortext3)
+	var/tsizeflavortext0 = "no"
+	var/list/tsizeflavortext1 = list("This bitch is as bare as a board!\n","She's flat, like old Fanta\n","Her chest looks like a xylophone\n","Haha, she doesn't have big boobs, lol!\n","It looks like a party baloon deflated on her chest\n", "She's got defective airbags\n")
+	var/list/tsizeflavortext2 = list("She's packing a pair of mundane mammaries\n", "She's got mediocre mounds\n", "She has humble humps\n","She has average breasts\n")
+	var/list/tsizeflavortext3 = list("They're equipped with large tits\n","This lady's got huge breasts!\n", "Her seas are sailed by some big belugas\n", "Her zoo's got a new pair of massive mammoths\n")
+
 	var/hud_updateflag = 0
 
 	//Damage related vars, NOTE: THESE SHOULD ONLY BE MODIFIED BY PROCS // what a joke

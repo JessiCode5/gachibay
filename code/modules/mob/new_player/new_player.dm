@@ -495,12 +495,24 @@
 	new_character.update_eyes()
 	new_character.regenerate_icons()
 
+
+
 	new_character.key = key		//Manually transfer the key to log them in
 	if (ckey(new_character.key) in shunned_list) // DARKHOLME'S DUNGEON ADDITIONS: GOD I HOPE THIS WORKS (SHUNNED)
 		log_admin("[new_character.key] is FUCKING SHUNNED!")
 		message_admins("[new_character.key] is FUCKING SHUNNED HOLY ASS!!!!", 1)
 		new_character.shunned_mod = 10
-	return new_character
+
+		//DD addition. Does the conversion from a string into an int for the variable to read from correctly. This would have worked better if I cared enough.
+	switch(new_character.titsize)
+		if("Small Tits")
+			new_character.titsize = 1
+		if("Medium Tits")
+			new_character.titsize = 2
+		if("Large Tits")
+			new_character.titsize = 3
+
+	return new_character // NOTE: This ends the character setup when the round starts. Keep this in mind when making changes to this file.
 
 /mob/new_player/proc/ViewManifest()
 	var/dat = "<div align='center'>"
@@ -547,6 +559,7 @@
 
 /mob/new_player/is_ready()
 	return ready && ..()
+
 
 /mob/new_player/hear_say(var/message, var/verb = "says", var/datum/language/language = null, var/alt_name = "",var/italics = 0, var/mob/speaker = null)
 	return
