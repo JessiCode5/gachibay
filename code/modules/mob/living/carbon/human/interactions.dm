@@ -340,7 +340,7 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 			playsound(loc, "honk/sound/interactions/bang[rand(1, 9)].ogg", 70, 1, -1)
 
 		if("anal")
-			P.apply_damage(3, BRUTE, BP_GROIN)
+			P.apply_damage(H.potenzia / 2, BRUTE, BP_GROIN)
 			//apply_damage(3, BRUTE, BP_GROIN) -- applies damage to the fucker
 			message = pick("fucks [P]'s ass.")
 			if (prob(35))
@@ -514,7 +514,8 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 
 /obj/item/weapon/enlarger/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
 	if(istype(M, /mob/living/carbon/human) && (M.gender == MALE))
-		M.potenzia = 30
+		M.potenzia += rand(1,5) * 5
+		M.reagents.add_reagent("toxin", rand(0,10))
 		M << "<span class='warning'>Your penis extends!</span>"
 
 	else if (istype(M, /mob/living/carbon/human) && M.gender == FEMALE)
