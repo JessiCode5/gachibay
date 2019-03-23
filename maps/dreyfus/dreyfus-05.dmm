@@ -349,7 +349,7 @@
 "gK" = (/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/bunker/black,/area/dreyfus/administration/sec/vestiaires)
 "gL" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/newcorner/red/diagonal,/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled/bunker/black,/area/dreyfus/administration/sec/vestiaires)
 "gM" = (/obj/structure/table/steel,/obj/machinery/recharger,/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/bunker/black,/area/dreyfus/administration/sec/vestiaires)
-"gN" = (/obj/structure/table/steel,/obj/item/weapon/handcuffs,/obj/item/weapon/reagent_containers/spray/pepper,/obj/structure/extinguisher_cabinet{pixel_x = 30},/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/bunker/black,/area/dreyfus/administration/sec/vestiaires)
+"gN" = (/obj/structure/table/steel,/obj/item/weapon/handcuffs,/obj/item/weapon/reagent_containers/spray/pepper,/obj/structure/extinguisher_cabinet{pixel_x = 30},/obj/effect/floor_decal/newcorner/red/diagonal,/obj/item/weapon/melee/baton,/turf/simulated/floor/tiled/bunker/black,/area/dreyfus/administration/sec/vestiaires)
 "gO" = (/turf/simulated/wall,/area/dreyfus/administration/sec/vestiaires)
 "gP" = (/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/bunker/black,/area/dreyfus/administration/sec/reception)
 "gQ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/bunker/black,/area/dreyfus/administration/sec/reception)
