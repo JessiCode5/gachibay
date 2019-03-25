@@ -95,7 +95,7 @@
 	return
 
 /datum/reagent/proc/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
-	M.adjust_thirst(quench_amount)
+	M.thirst += quench_amount * removed
 	affect_blood(M, alien, removed * 0.5)
 	return
 

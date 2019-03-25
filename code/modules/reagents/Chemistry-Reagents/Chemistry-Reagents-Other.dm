@@ -187,12 +187,14 @@
 	id = "holywater"
 	description = "An ashen-obsidian-water mix, this solution will alter certain sections of the brain's rationality."
 	color = "#E0E8EF"
+	quench_amount = 50 // BILLY PROVIDES
 
 	glass_name = "holy water"
 	glass_desc = "An ashen-obsidian-water mix, this solution will alter certain sections of the brain's rationality."
 
 /datum/reagent/water/holywater/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
+	M.thirst += quench_amount * removed
 	if(ishuman(M)) // Any location
 		if(iscultist(M))
 			if(prob(10))
