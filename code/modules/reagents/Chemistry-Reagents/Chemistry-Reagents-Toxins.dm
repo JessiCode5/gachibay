@@ -560,7 +560,6 @@
 			to_chat(M, "<span class='danger'>Your flesh rapidly mutates!</span>")
 			H.set_species("Promethean")
 			H.shapeshifter_set_colour("#05FF9B")
-			H.verbs -= /mob/living/carbon/human/proc/shapeshifter_select_colour
 
 /datum/reagent/aslimetoxin
 	name = "Advanced Mutation Toxin"
