@@ -8,10 +8,7 @@
 Prism2001 - Host
 Sandvichman - Host
 DrNewHero - Host
-Killzone428 - Host
-Baeiou - Jabroni
-Compano - Jabroni
-OgardTheViking - Jabroni
-Ningajai - Jabroni
-Puglife - Jabroni
-Alaspo - Jabroni 
+#OgardTheViking - Jabroni
+#Ningajai - Jabroni
+#Puglife - Jabroni
+#Alaspo - Jabroni

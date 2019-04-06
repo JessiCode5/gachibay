@@ -29,6 +29,12 @@
 	cost = 10
 	containername = "\improper Body bag crate"
 
+/decl/hierarchy/supply_pack/medical/enlarger
+	name = "Penis enlargers"
+	contains = list(/obj/item/weapon/enlarger = 4)
+	cost = 10
+	containername = "\improper Penis enlarger crate"
+
 /decl/hierarchy/supply_pack/medical/cryobag
 	name = "Stasis bag crate"
 	contains = list(/obj/item/bodybag/cryobag = 3)

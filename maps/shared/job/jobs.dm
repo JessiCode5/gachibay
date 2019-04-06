@@ -94,7 +94,7 @@
 
 
 /datum/job/assistant
-	title = "Lackey"
+	title = "Assistant"
 	supervisors = "Everyone"
 	minimal_player_age = 14
 	economic_modifier = 1
@@ -111,7 +111,7 @@
 
 
 /datum/job/captain
-	title = "Magistrate"
+	title = "Captain"
 	supervisors = "CMA and your good will."
 	minimal_player_age = 41
 	economic_modifier = 10
@@ -126,8 +126,8 @@
 
 
 /datum/job/hop
-	title = "Overseer"
-	supervisors = "the Magistrate"
+	title = "Head of Personnel"
+	supervisors = "the Captain"
 	minimal_player_age = 31
 	economic_modifier = 5
 	ideal_character_age = 45
@@ -142,7 +142,7 @@
 
 /datum/job/employe
 	title = "Employe Administratif"
-	supervisors = "the Overseer"
+	supervisors = "the HoP"
 	minimal_player_age = 21
 	economic_modifier = 8
 	ideal_character_age = 30
@@ -158,8 +158,8 @@
 	minimal_access = list(access_lawyer, access_heads)
 
 /datum/job/rd
-	title = "Technomancer"
-	supervisors = "the Magistrate"
+	title = "Research Associate"
+	supervisors = "the Captain"
 	minimal_player_age = 21
 	economic_modifier = 9
 	ideal_character_age = 40
@@ -186,7 +186,7 @@
 		H.add_skills(rand(25, 50), rand(25,50), rand(65, 75))
 
 /datum/job/scientist
-	title = "Tenchotrainee"
+	title = "Scientist"
 	supervisors = "Technomancer"
 	minimal_player_age = 19
 	economic_modifier = 2
@@ -203,8 +203,8 @@
 
 /datum/job/doctor
 	selection_color = "#633d63"
-	title = "Practitioner"
-	supervisors = "the Overseer"
+	title = "Doctor"
+	supervisors = "the HoP"
 	minimal_player_age = 19
 	economic_modifier = 2
 	ideal_character_age = 30
@@ -220,7 +220,7 @@
 		H.add_skills(rand(30,50), rand(30,50), rand(65,75))
 
 /datum/job/doctor/undertaker
-	title = "Undertaker"
+	title = "Mortician"
 	alt_titles = list()
 	total_positions = 1
 	spawn_positions = 1
@@ -231,8 +231,8 @@
 			access_chemistry, access_virology, access_cmo, access_surgery, access_maint_tunnels)
 
 /datum/job/hos
-	title = "Head Peacekeeper"
-	supervisors = "the Magistrate"
+	title = "Head of Security"
+	supervisors = "the Captain"
 	department_flag = SEC
 	faction = "Station"
 	total_positions = 1
@@ -258,7 +258,7 @@
 
 
 /datum/job/officer
-	title = "Peacekeeper"
+	title = "Security Officer"
 	department = "Security"
 	department_flag = SEC
 	faction = "Station"
@@ -279,7 +279,7 @@
 /datum/job/qm
 	selection_color = "#3d3315"
 	title = "Quartermaster"
-	supervisors = "the Overseer"
+	supervisors = "the HoP"
 	minimal_player_age = 21
 	economic_modifier = 3
 	ideal_character_age = 30
@@ -291,8 +291,8 @@
 		H.add_stats(rand(8,12), rand(9,12), rand(7,10))
 
 /datum/job/engineer
-	title = "Upkeeper"
-	supervisors = "the Overseer"
+	title = "Engineer"
+	supervisors = "the HoP"
 	minimal_player_age = 16
 	economic_modifier = 3
 	ideal_character_age = 21
@@ -308,8 +308,8 @@
 		H.add_stats(rand(10,15), rand(7,10), rand(9,14))
 
 /datum/job/headengineer
-	title = "Head Upkeeper"
-	supervisors = "the Overseer"
+	title = "Head Engineer"
+	supervisors = "the HoP"
 	minimal_player_age = 18
 	economic_modifier = 3
 	ideal_character_age = 25
@@ -342,7 +342,7 @@
 
 /datum/job/cargo_tech
 	selection_color = "#7c6a2e"
-	title = "Crate Pusher"
+	title = "Cargo Technician"
 	supervisors = "the Quartermaster"
 	minimal_player_age = 16
 	economic_modifier = 2
@@ -460,7 +460,7 @@
 
 /datum/job/chef
 	title = "Cook"
-	supervisors = "the Overseer"
+	supervisors = "the HoP"
 	minimal_player_age = 16
 	economic_modifier = 2
 	ideal_character_age = 21
@@ -489,7 +489,7 @@
 
 /datum/job/janitor
 	title = "Janitor"
-	supervisors = "the Overseer"
+	supervisors = "the HoP"
 	minimal_player_age = 16
 	economic_modifier = 1
 	ideal_character_age = 21
