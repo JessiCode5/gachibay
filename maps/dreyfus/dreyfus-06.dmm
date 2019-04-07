@@ -192,7 +192,7 @@
 "dJ" = (/obj/effect/wingrille_spawn/reinforced,/obj/machinery/door/firedoor/border_only,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/space)
 "dK" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/dreyfus/coupole/maintenance)
 "dL" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/light/small{tag = "icon-bulb1 (EAST)"; icon_state = "bulb1"; dir = 4},/obj/machinery/atmospherics/pipe/simple/visible/universal,/turf/simulated/floor/tiled/techfloor/grid,/area/dreyfus/coupole/maintenance)
-"dM" = (/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -22; pixel_y = 0; tag = "icon-alarm0 (EAST)"},/obj/structure/safe/floor,/turf/simulated/floor/wood,/area/dreyfus/coupole/aumonier)
+"dM" = (/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -22; pixel_y = 0; tag = "icon-alarm0 (EAST)"},/turf/simulated/floor/wood,/area/dreyfus/coupole/aumonier)
 "dN" = (/obj/structure/bed/chair/wood{tag = "icon-wooden_chair (NORTH)"; icon_state = "wooden_chair"; dir = 1},/obj/effect/landmark/start{name = "Supreme Arbiter"},/turf/simulated/floor/carpet,/area/dreyfus/coupole/aumonier)
 "dO" = (/turf/simulated/floor/carpet,/area/dreyfus/coupole/aumonier)
 "dP" = (/obj/structure/bed,/obj/item/weapon/bedsheet/red,/turf/simulated/floor/wood,/area/dreyfus/coupole/aumonier)
