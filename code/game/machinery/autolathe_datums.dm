@@ -61,3 +61,8 @@
 	name = "stock"
 	path = /obj/item/stock
 	category = "General"
+	
+/datum/autolathe/recipe/console_screen
+	name = "console screen"
+	path = /obj/item/weapon/stock_parts/console_screen
+	category = "General"
