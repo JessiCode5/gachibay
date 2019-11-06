@@ -248,7 +248,7 @@
 	result_amount = 3
 
 /datum/chemical_reaction/lube
-	name = "Space Lube"
+	name = "Appliance Lubricant"
 	id = "lube"
 	result = "lube"
 	required_reagents = list("water" = 1, "silicon" = 1, "acetone" = 1)
