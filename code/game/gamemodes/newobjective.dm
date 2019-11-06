@@ -1143,7 +1143,7 @@ datum
 				var/target_name
 				New(var/text,var/joba)
 					..()
-					var/list/items = list("Sulphuric acid", "Polytrinic acid", "Space Lube", "Unstable mutagen",\
+					var/list/items = list("Sulphuric acid", "Polytrinic acid", "Appliance Lubricant", "Unstable mutagen",\
 					 "Leporazine", "Cryptobiolin", "Lexorin ",\
 					  "Kelotane", "Dexalin", "Tricordrazine")
 					target_name = pick(items)
@@ -1152,7 +1152,7 @@ datum
 							steal_target = /datum/reagent/acid
 						if("Polytrinic acid")
 							steal_target = /datum/reagent/pacid
-						if("Space Lube")
+						if("Appliance Lubricant")
 							steal_target = /datum/reagent/lube
 						if("Unstable mutagen")
 							steal_target = /datum/reagent/mutagen
