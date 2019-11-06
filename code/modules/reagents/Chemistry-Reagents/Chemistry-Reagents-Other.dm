@@ -310,7 +310,7 @@
 	M.clean_blood()
 
 /datum/reagent/lube // TODO: spraying on borgs speeds them up
-	name = "Space Lube"
+	name = "Appliance Lubricant"
 	id = "lube"
 	description = "Lubricant is a substance introduced between two moving surfaces to reduce the friction and wear between them. giggity."
 	taste_description = "slime"
