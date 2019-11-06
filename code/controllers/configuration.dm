@@ -11,6 +11,7 @@ var/list/gamemode_cache = list()
 	var/log_say = 1						// log client say
 	var/log_admin = 1					// log admin actions
 	var/log_debug = 1					// log debug output
+	var/tts_server = ""					// TTS Server // GACHIBAY ADDITION
 	var/log_game = 1					// log game events
 	var/log_vote = 1					// log voting
 	var/log_whisper = 1					// log client whisper

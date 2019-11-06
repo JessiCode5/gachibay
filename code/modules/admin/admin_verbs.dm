@@ -964,3 +964,37 @@ var/list/admin_verbs_mentor = list(
 	T.add_spell(new S)
 	feedback_add_details("admin_verb","GS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("gave [key_name(T)] the spell [S].")
+
+//client/proc/cmd_dectalk() // van darkholme addition -- probably doesn't work but fuck it let's try it
+//	set name = "Dectalk"
+//	set category = "Special Verbs"
+//	set desc = "Sends a message as voice to all players"
+//	//set popup_menu = 0
+//
+//	if(!check_rights(R_DEBUG))
+//		return 0
+//
+//	var/msg
+//	if (args && args.len > 0)
+//		msg = args[1]
+//
+//	msg = input(src, "Sends a message as voice to all players", "Dectalk", msg) as null|message
+//	if (!msg)
+//		return 0
+//
+//	var/audio = dectalk(msg)
+//	if (audio && audio["audio"])
+//		message_admins("[key_name(src)] has used the dectalk verb with message: [audio["message"]]")
+//		log_admin("[key_name(src)] has used the dectalk verb with message: [audio["message"]]")
+//
+//		for (var/client/C in clients)
+//			var/trigger = src.key
+//			chatOutput.ehjax_send(C, "browseroutput", list("dectalk" = audio["audio"], "decTalkTrigger" = trigger))
+//		return 1
+//	else if (audio && audio["cooldown"])
+//		alert(src, "There is a [nextDecTalkDelay] second global cooldown between uses of this verb. Please wait [((world.timeofday + nextDecTalkDelay * 10) - world.timeofday)/10] seconds.")
+//		src.cmd_dectalk(msg)
+//		return 0
+//	else
+//		alert(src, "An external server error has occurred. Please report this.")
+//		return 0

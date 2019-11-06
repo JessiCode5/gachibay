@@ -109,6 +109,14 @@
 	containername = "\improper Shotgun crate"
 	access = access_armory
 
+/decl/hierarchy/supply_pack/security/a357ammo
+	name = ".357 ammo crate"
+	contains = list(/obj/item/ammo_magazine/a357 = 4)
+	cost = 50
+	containertype = /obj/structure/closet/crate/secure
+	containername = "\improper A357 ammo crate"
+	access = access_armory
+
 /decl/hierarchy/supply_pack/security/erifle
 	name = "Energy marksman crate"
 	contains = list(/obj/item/clothing/suit/armor/laserproof = 2,

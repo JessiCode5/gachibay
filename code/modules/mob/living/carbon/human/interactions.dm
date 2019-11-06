@@ -134,9 +134,12 @@
 				if (mouthfree_p)
 					dat += {"<A href='?src=\ref[usr];interaction=oral'><font color=purple>Fuck mouth.</font></A><BR>"}
 	if (isnude && usr.loc == H.partner.loc && hashands)
-		if (hasvagina && haspenis_p && (!H.mutilated_genitals))
+		if(hasvagina && (!H.mutilated_genitals))
 			dat += {"<font size=3><B>Vagina:</B></font><BR>"}
-			dat += {"<A href='?src=\ref[usr];interaction=mount'><font color=purple>Mount!</font></A><BR><HR>"}
+			if (haspenis_p)
+				dat += {"<A href='?src=\ref[usr];interaction=mount'><font color=purple>Mount!</font></A><BR>"}
+			if(hasvagina_p)
+				dat += {"<A href='?src=\ref[usr];interaction=scissor'><font color=purple>Scissor!</font></A><BR>"}
 
 	var/datum/browser/popup = new(usr, "interactions", "Interactions", 340, 480)
 	popup.set_content(dat)
@@ -340,7 +343,7 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 			playsound(loc, "honk/sound/interactions/bang[rand(1, 9)].ogg", 70, 1, -1)
 
 		if("anal")
-			P.apply_damage(3, BRUTE, BP_GROIN)
+			P.apply_damage(H.potenzia / 2, BRUTE, BP_GROIN)
 			//apply_damage(3, BRUTE, BP_GROIN) -- applies damage to the fucker
 			message = pick("fucks [P]'s ass.")
 			if (prob(35))
@@ -442,6 +445,33 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 			if (H.species.name == "Slime People")
 				playsound(loc, "honk/sound/interactions/champ[rand(1, 2)].ogg", 50, 1, -1)
 
+		if("scissor")
+			message = pick("rubs up on [P]'s pussy", "scissors with [P]")
+			if (H.lastfucked != P || H.lfhole != hole)
+				H.lastfucked = P
+				H.lfhole = hole
+			if (prob(5) && P.stat != DEAD)
+				H.visible_message("<font color=purple><B>[H] [message]</B></font>")
+			else
+				H.visible_message("<font color=purple>[H] [message]</font>")
+			P.lust += 10
+			H.lust += rand(5, 10)
+			if (istype(P.loc, /obj/structure/closet))
+				P.visible_message("<font color=purple>[H] [message]</font>")
+				playsound(P.loc.loc, 'sound/effects/clang.ogg', 50, 0, 0)
+			if (P.stat != DEAD && P.stat != UNCONSCIOUS)
+				if (P.lust >= P.resistenza)
+					P.cum(P, H)
+				else
+					P.moan()
+
+			if(H.lust >= H.resistenza)
+				H.cum(H, P)
+			else
+				H.moan()
+			H.do_fucking_animation(P)
+
+
 /mob/living/carbon/human/proc/moan()
 
 	var/mob/living/carbon/human/H = src
@@ -514,7 +544,8 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 
 /obj/item/weapon/enlarger/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
 	if(istype(M, /mob/living/carbon/human) && (M.gender == MALE))
-		M.potenzia = 30
+		M.potenzia += rand(1,5) * 5
+		M.reagents.add_reagent("toxin", rand(0,10))
 		M << "<span class='warning'>Your penis extends!</span>"
 
 	else if (istype(M, /mob/living/carbon/human) && M.gender == FEMALE)

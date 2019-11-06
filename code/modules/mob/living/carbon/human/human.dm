@@ -883,7 +883,13 @@
 				else
 					var/message = pick("You have no lust now.")//"Íå õî÷åòñ[ya] ìíå...", "Êàê-òî íåò æåëàíè[ya]...", "×òî-òî íå îõîòà...", "Íåò, íå ñåé÷àñ.")
 					H << message
-
+		else if (href_list["interaction"] == "scissor")
+			if (H.loc == P.loc && isnude && isnude_p && hasvagina_p && hasvagina)
+				if(H.erpcooldown == 0)
+					H.fuck(H, P, "scissor")
+				else
+					var/message = pick("You have no lust now.")
+					H << message
 	..()
 	return
 
